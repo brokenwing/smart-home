@@ -2,6 +2,16 @@
 <resources>
 
     <string name="app_name">SmartHome</string>
-    <string name="title_item_detail">Item Detail</string>
+    
+    <string name="main_title">Main</string>
+    <string name="main_1_1">Device</string>
+    <string name="main_1_2">Scene</string>
+    <string name="main_1_3">Camera</string>
+    <string name="main_2_1">Infrared</string>
+    <string name="main_2_2">Smart Scene</string>
+    <string name="main_2_3">Setting</string>
+    
+    <string name="device_title">Device</string>
+    
 
 </resources>

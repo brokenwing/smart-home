@@ -12,14 +12,26 @@ public final class R {
     }
     public static final class drawable {
         public static final int ic_launcher=0x7f020000;
+        public static final int olivia=0x7f020001;
     }
     public static final class id {
-        public static final int item_detail=0x7f060002;
-        public static final int item_detail_container=0x7f060000;
-        public static final int item_list=0x7f060001;
+        public static final int imageButtonLeft=0x7f060000;
+        public static final int imageButtonRight=0x7f060002;
+        public static final int imageButton_1_1=0x7f060003;
+        public static final int imageButton_1_2=0x7f060005;
+        public static final int imageButton_1_3=0x7f060007;
+        public static final int imageButton_2_1=0x7f060009;
+        public static final int imageButton_2_2=0x7f06000b;
+        public static final int imageButton_2_3=0x7f06000d;
+        public static final int textViewCenter=0x7f060001;
+        public static final int textView_1_1=0x7f060004;
+        public static final int textView_1_2=0x7f060006;
+        public static final int textView_1_3=0x7f060008;
+        public static final int textView_2_1=0x7f06000a;
+        public static final int textView_2_2=0x7f06000c;
+        public static final int textView_2_3=0x7f06000e;
     }
     public static final class layout {
-        public static final int activity_item_detail=0x7f030000;
         /** 
     Layout alias to replace the single-pane version of the layout with a
     two-pane version on Large screens.
@@ -35,13 +47,20 @@ public final class R {
     http://developer.android.com/training/multiscreen/screensizes.html#TaskUseAliasFilters
     
          */
-        public static final int activity_item_list=0x7f030001;
-        public static final int activity_item_twopane=0x7f030002;
-        public static final int fragment_item_detail=0x7f030003;
+        public static final int activity_item_list=0x7f030002;
+        public static final int device=0x7f030000;
+        public static final int main=0x7f030001;
     }
     public static final class string {
         public static final int app_name=0x7f040000;
-        public static final int title_item_detail=0x7f040001;
+        public static final int device_title=0x7f040008;
+        public static final int main_1_1=0x7f040002;
+        public static final int main_1_2=0x7f040003;
+        public static final int main_1_3=0x7f040004;
+        public static final int main_2_1=0x7f040005;
+        public static final int main_2_2=0x7f040006;
+        public static final int main_2_3=0x7f040007;
+        public static final int main_title=0x7f040001;
     }
     public static final class style {
         /** 

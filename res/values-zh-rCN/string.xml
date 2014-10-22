@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">智能家居</string>
+    
+    <string name="main_title">首页</string>
+    <string name="main_1_1">设备</string>
+    <string name="main_1_2">场景</string>
+    <string name="main_1_3">摄像头</string>
+    <string name="main_2_1">红外线</string>
+    <string name="main_2_2">智能场景</string>
+    <string name="main_2_3">设置</string>
+
+</resources>
