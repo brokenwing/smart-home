@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/SceneLayout"
+    tools:context="smarthome.SceneActivity" >
+	    
+        <!-- RETURN BAR -->
+        
+        <LinearLayout
+        	android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+			style="@style/ReturnBar"
+	        android:orientation="horizontal" >
+            
+            <ImageButton
+                android:id="@+id/imageButtonReturn"
+				style="@style/ReturnButton"
+                android:onClick="ButtonClick_return"
+                 />
+            
+	    </LinearLayout>
+	    
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            
+            <LinearLayout
+        	android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+	        android:orientation="vertical" >
+	    
+		        <!-- LIST 1-->
+			    
+		        <LinearLayout
+		        	android:layout_width="match_parent"
+					style="@style/SceneSelection"
+			        android:orientation="horizontal" >
+		
+		            <ImageButton
+		                android:id="@+id/imageButton_1"
+                		style="@style/SceneImageButton"
+		                android:background="@drawable/go_out" />
+		
+		            <TextView
+		                android:id="@+id/textView_1"
+                		style="@style/SceneText"
+		                android:text="@string/scene_1" />
+		
+		            <Button
+		                android:id="@+id/button_1"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="center"
+		                android:text="@string/scene_apply_button" />
+		    	    
+			    </LinearLayout>
+			    
+		        <!-- LIST 2-->
+			    
+		        <LinearLayout
+		        	android:layout_width="match_parent"
+					style="@style/SceneSelection"
+			        android:orientation="horizontal" >
+		
+		            <ImageButton
+		                android:id="@+id/imageButton_2"
+		                style="@style/SceneImageButton"
+		                android:background="@drawable/go_home" />
+		
+		            <TextView
+		                android:id="@+id/textView_2"
+                		style="@style/SceneText"
+		                android:text="@string/scene_2" />
+		
+		            <Button
+		                android:id="@+id/button_2"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="center"
+		                android:text="@string/scene_apply_button" />
+		    	    
+			    </LinearLayout>
+			    
+		        <!-- LIST 3-->
+			    
+		        <LinearLayout
+		        	android:layout_width="match_parent"
+					style="@style/SceneSelection"
+			        android:orientation="horizontal" >
+		
+		            <ImageButton
+		                android:id="@+id/imageButton_3"
+		                style="@style/SceneImageButton"
+		                android:background="@drawable/meal" />
+		
+		            <TextView
+		                android:id="@+id/textView_3"
+                		style="@style/SceneText"
+		                android:text="@string/scene_3" />
+		
+		            <Button
+		                android:id="@+id/button_3"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="center"
+		                android:text="@string/scene_apply_button" />
+		    	    
+			    </LinearLayout>
+			    
+		        <!-- LIST 4-->
+			    
+		        <LinearLayout
+		        	android:layout_width="match_parent"
+					style="@style/SceneSelection"
+			        android:orientation="horizontal" >
+		
+		            <ImageButton
+		                android:id="@+id/imageButton_4"
+		                style="@style/SceneImageButton"
+		                android:background="@drawable/releax" />
+		
+		            <TextView
+		                android:id="@+id/textView_4"
+                		style="@style/SceneText"
+		                android:text="@string/scene_4" />
+		
+		            <Button
+		                android:id="@+id/button_4"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="center"
+		                android:text="@string/scene_apply_button" />
+		    	    
+			    </LinearLayout>
+			    
+		        <!-- LIST 5-->
+			    
+		        <LinearLayout
+		        	android:layout_width="match_parent"
+					style="@style/SceneSelection"
+			        android:orientation="horizontal" >
+		
+		            <ImageButton
+		                android:id="@+id/imageButton_5"
+		                style="@style/SceneImageButton"
+		                android:background="@drawable/night" />
+		
+		            <TextView
+		                android:id="@+id/textView_5"
+                		style="@style/SceneText"
+		                android:text="@string/scene_5" />
+		
+		            <Button
+		                android:id="@+id/button_5"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="center"
+		                android:text="@string/scene_apply_button" />
+		    	    
+			    </LinearLayout>
+	    
+		    </LinearLayout>
+        </ScrollView>
+	    
+</LinearLayout>

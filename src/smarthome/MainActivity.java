@@ -3,67 +3,88 @@ package smarthome;
 import com.example.smarthome.R;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
-/**
- * An activity representing a list of Items. This activity has different
- * presentations for handset and tablet-size devices. On handsets, the activity
- * presents a list of items, which when touched, lead to a
- * {@link ItemDetailActivity} representing item details. On tablets, the
- * activity presents the list of items and item details side-by-side using two
- * vertical panes.
- * <p>
- * The activity makes heavy use of fragments. The list of items is a
- * {@link ItemListFragment} and the item details (if present) is a
- * {@link ItemDetailFragment}.
- * <p>
- * This activity also implements the required {@link ItemListFragment.Callbacks}
- * interface to listen for item selections.
- */
 public class MainActivity extends Activity {
-
-	/**
-	 * Whether or not the activity is in two-pane mode, i.e. running on a tablet
-	 * device.
-	 */
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
-		// TODO: If exposing deep links into your app, handle intents here.
+		LoadMainList();
 	}
 
 	public void ButtonClick_left(View v){
-		
+		LoadMainList();
 	}
 	
 	public void ButtonClick_right(View v){
+	}
+	
+	public void ButtonClick_return(View v){
+		LoadMainList();
+	}
+	
+	public void ButtonClick_main_1_1(View v){
+		LoadDevice();
+	}
+	
+	public void ButtonClick_main_1_2(View v){
+		LoadScene();
+	}
+	
+	public void ButtonClick_main_1_3(View v){
 		
 	}
 	
-	public void ButtonClick_1_1(View v){
+	public void ButtonClick_main_2_1(View v){
 		
 	}
 	
-	public void ButtonClick_1_2(View v){
+	public void ButtonClick_main_2_2(View v){
 		
 	}
 	
-	public void ButtonClick_1_3(View v){
+	public void ButtonClick_main_2_3(View v){
 		
 	}
 	
-	public void ButtonClick_2_1(View v){
-		
+	private void LoadMainList(){
+		LayoutInflater inflater=getLayoutInflater();
+        LinearLayout tmp = (LinearLayout) inflater.inflate(R.layout.main_list, null).findViewById(R.id.MainLayout);        
+        LinearLayout layoutMain = (LinearLayout)findViewById(R.id.ContentLayout);
+        layoutMain.removeAllViews();
+        layoutMain.addView(tmp);
+        
+        TextView title = (TextView) findViewById(R.id.textViewCenter);
+        title.setText(R.string.main_title);
 	}
 	
-	public void ButtonClick_2_2(View v){
-		
+	private void LoadScene(){
+		LayoutInflater inflater=getLayoutInflater();
+        LinearLayout tmp = (LinearLayout) inflater.inflate(R.layout.scene, null).findViewById(R.id.SceneLayout);        
+        LinearLayout layoutMain = (LinearLayout)findViewById(R.id.ContentLayout);
+        layoutMain.removeAllViews();
+        layoutMain.addView(tmp);
+        
+        TextView title = (TextView) findViewById(R.id.textViewCenter);
+        title.setText(R.string.scene_title);
 	}
 	
-	public void ButtonClick_2_3(View v){
-		
+	private void LoadDevice(){
+		LayoutInflater inflater=getLayoutInflater();
+        LinearLayout tmp = (LinearLayout) inflater.inflate(R.layout.device, null).findViewById(R.id.DeviceLayout);        
+        LinearLayout layoutMain = (LinearLayout)findViewById(R.id.ContentLayout);
+        layoutMain.removeAllViews();
+        layoutMain.addView(tmp);
+        
+        TextView title = (TextView) findViewById(R.id.textViewCenter);
+        title.setText(R.string.device_title);
 	}
 }

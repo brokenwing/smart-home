@@ -3,39 +3,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:id="@+id/DeviceLayout"
+    tools:context="smarthome.SceneActivity" >
+	    
+        <!-- RETURN BAR -->
         
-    	<!-- GUIDE BAR -->
-    
         <LinearLayout
         	android:layout_width="match_parent"
     	    android:layout_height="wrap_content"
-    	    android:layout_marginLeft="10dp"
-    	    android:layout_marginRight="10dp"
+			style="@style/ReturnBar"
 	        android:orientation="horizontal" >
-
+            
             <ImageButton
-                android:id="@+id/imageButtonLeft"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_launcher" />
-
-            <TextView
-                android:id="@+id/textViewCenter"
-                android:layout_width="0dip"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="@string/device_title"
-                android:textSize="30sp" />
-
-            <ImageButton
-                android:id="@+id/imageButtonRight"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_launcher" />
+                android:id="@+id/imageButtonReturn"
+				style="@style/ReturnButton"
+                android:onClick="ButtonClick_return"
+                 />
             
 	    </LinearLayout>
+	    
+        
 	    
 </LinearLayout>

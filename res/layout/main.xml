@@ -3,206 +3,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context="smarthome.MainActivity" >
         
     	<!-- GUIDE BAR -->
     
         <LinearLayout
         	android:layout_width="match_parent"
-    	    android:layout_height="wrap_content"
-    	    android:layout_marginLeft="10dp"
-    	    android:layout_marginRight="10dp"
+    	    android:layout_height="50dp"
+    	    android:paddingTop="10dp"
+    	    android:paddingBottom="5dp"
+    	    android:paddingLeft="10dp"
+    	    android:paddingRight="10dp"
+    	    android:background="#50000000"
 	        android:orientation="horizontal" >
 
             <ImageButton
                 android:id="@+id/imageButtonLeft"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:onClick="ButtonClick_left"
-                android:src="@drawable/ic_launcher" />
+                android:background="@drawable/home"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
 
             <TextView
                 android:id="@+id/textViewCenter"
-                android:layout_width="0dip"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="@string/main_title"
-                android:textSize="30sp" />
+                style="@style/GuideText"
+                android:text="@string/main_title"  />
 
             <ImageButton
                 android:id="@+id/imageButtonRight"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:onClick="ButtonClick_right"
-                android:src="@drawable/ic_launcher" />
+                android:background="@drawable/link"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
             
 	    </LinearLayout>
 	    
-        <!-- FIRST ROW -->
+        <!-- content -->
         
         <LinearLayout
-        	android:layout_width="match_parent"
-    	    android:layout_height="wrap_content"
-    	    android:layout_marginTop="30dp"
-	        android:orientation="horizontal" >
-            
-            <LinearLayout
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:layout_weight="1"
-		        android:orientation="vertical" >
-		        
-		        <ImageButton
-	                android:id="@+id/imageButton_1_1"
-	                android:layout_width="wrap_content"
-	                android:layout_height="wrap_content"
-	                android:layout_gravity="center"
-	                android:onClick="ButtonClick_1_1"
-	                android:src="@drawable/ic_launcher" />
-                
-		        <TextView
-	                android:id="@+id/textView_1_1"
-	                android:layout_width="wrap_content"
-	                android:layout_height="wrap_content"
-	                android:layout_gravity="center"
-	                android:text="@string/main_1_1"
-	                android:textSize="20sp" />
-		        
-		    </LinearLayout>
-		    
-            <LinearLayout
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:layout_weight="1"
-		        android:orientation="vertical" >
-		        
-		        <ImageButton
-	                android:id="@+id/imageButton_1_2"
-	                android:layout_width="wrap_content"
-	                android:layout_height="wrap_content"
-	                android:layout_gravity="center"
-	                android:onClick="ButtonClick_1_2"
-	                android:src="@drawable/ic_launcher" />
-                
-		        <TextView
-	                android:id="@+id/textView_1_2"
-	                android:layout_width="wrap_content"
-	                android:layout_height="wrap_content"
-	                android:layout_gravity="center"
-	                android:text="@string/main_1_2"
-	                android:textSize="20sp" />
-		        
-		    </LinearLayout>
-		    
-            <LinearLayout
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:layout_weight="1"
-		        android:orientation="vertical" >
-		        
-		        <ImageButton
-	                android:id="@+id/imageButton_1_3"
-	                android:layout_width="wrap_content"
-	                android:layout_height="wrap_content"
-	                android:layout_gravity="center"
-	                android:onClick="ButtonClick_1_3"
-	                android:src="@drawable/ic_launcher" />
-                
-		        <TextView
-	                android:id="@+id/textView_1_3"
-	                android:layout_width="wrap_content"
-	                android:layout_height="wrap_content"
-	                android:layout_gravity="center"
-	                android:text="@string/main_1_3"
-	                android:textSize="20sp" />
-		        
-		    </LinearLayout>
-            
-	    </LinearLayout>
-
-        <!-- SECOND ROW -->
-        
-        <LinearLayout
-        	android:layout_width="match_parent"
-    	    android:layout_height="wrap_content"
-    	    android:layout_marginTop="30dp"
-	        android:orientation="horizontal" >
-            
-            <LinearLayout
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:layout_weight="1"
-		        android:orientation="vertical" >
-		        
-		        <ImageButton
-	                android:id="@+id/imageButton_2_1"
-	                android:layout_width="wrap_content"
-	                android:layout_height="wrap_content"
-	                android:layout_gravity="center"
-	                android:onClick="ButtonClick_2_1"
-	                android:src="@drawable/ic_launcher" />
-                
-		        <TextView
-	                android:id="@+id/textView_2_1"
-	                android:layout_width="wrap_content"
-	                android:layout_height="wrap_content"
-	                android:layout_gravity="center"
-	                android:text="@string/main_2_1"
-	                android:textSize="20sp" />
-		        
-		    </LinearLayout>
-		    
-            <LinearLayout
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:layout_weight="1"
-		        android:orientation="vertical" >
-		        
-		        <ImageButton
-	                android:id="@+id/imageButton_2_2"
-	                android:layout_width="wrap_content"
-	                android:layout_height="wrap_content"
-	                android:layout_gravity="center"
-	                android:onClick="ButtonClick_2_2"
-	                android:src="@drawable/ic_launcher" />
-                
-		        <TextView
-	                android:id="@+id/textView_2_2"
-	                android:layout_width="wrap_content"
-	                android:layout_height="wrap_content"
-	                android:layout_gravity="center"
-	                android:text="@string/main_2_2"
-	                android:textSize="20sp" />
-		        
-		    </LinearLayout>
-		    
-            <LinearLayout
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:layout_weight="1"
-		        android:orientation="vertical" >
-		        
-		        <ImageButton
-	                android:id="@+id/imageButton_2_3"
-	                android:layout_width="wrap_content"
-	                android:layout_height="wrap_content"
-	                android:layout_gravity="center"
-	                android:onClick="ButtonClick_2_3"
-	                android:src="@drawable/ic_launcher" />
-                
-		        <TextView
-	                android:id="@+id/textView_2_3"
-	                android:layout_width="wrap_content"
-	                android:layout_height="wrap_content"
-	                android:layout_gravity="center"
-	                android:text="@string/main_2_3"
-	                android:textSize="20sp" />
-		        
-		    </LinearLayout>
-            
-	    </LinearLayout>
-        
+            android:id="@+id/ContentLayout"
+            android:layout_width="match_parent"
+    		android:layout_height="match_parent"
+    		android:orientation="vertical" >
+        </LinearLayout>
         
 </LinearLayout>

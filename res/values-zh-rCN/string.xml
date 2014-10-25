@@ -10,5 +10,15 @@
     <string name="main_2_1">红外线</string>
     <string name="main_2_2">智能场景</string>
     <string name="main_2_3">设置</string>
+    
+    <string name="device_title">设备</string>
+    
+    <string name="scene_title">场景</string>
+    <string name="scene_apply_button">应用</string>
+    <string name="scene_1">回家</string>
+    <string name="scene_2">离家</string>
+    <string name="scene_3">进餐</string>
+    <string name="scene_4">休闲</string>
+    <string name="scene_5">晚睡</string>
 
 </resources>

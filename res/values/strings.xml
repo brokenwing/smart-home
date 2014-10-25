@@ -13,5 +13,13 @@
     
     <string name="device_title">Device</string>
     
+    <string name="scene_title">Scene</string>
+    <string name="scene_apply_button">Apply</string>
+    <string name="scene_1">back home</string>
+    <string name="scene_2">go out</string>
+    <string name="scene_3">meal</string>
+    <string name="scene_4">relax</string>
+    <string name="scene_5">night</string>
+    
 
 </resources>
