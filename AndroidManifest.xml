@@ -24,7 +24,21 @@
             </intent-filter>
         </activity>
         
+        <activity
+            android:name="smarthome.SceneActivity"
+            android:label="@string/app_name" >
+        </activity>
         
+        <activity
+            android:name="smarthome.DeviceActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="smarthome.RoomActivity"
+            android:label="@string/app_name" >
+        </activity>
+            
     </application>
 
 </manifest>

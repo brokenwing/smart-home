@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:id="@+id/DeviceLayout"
-    tools:context="smarthome.SceneActivity" >
+    tools:context="smarthome.SceneLayout" >
 	    
         <!-- RETURN BAR -->
         
