@@ -1,8 +1,12 @@
 package smarthome;
 
+import java.util.Iterator;
 import java.util.Vector;
 import com.example.smarthome.R;
 
+import Parser.Floor;
+import Parser.Room;
+import Parser.XMLParser;
 import android.content.Context;
 import android.view.Gravity;
 import android.view.View;
@@ -26,11 +30,13 @@ public final class MyExpandableListAdapter extends BaseExpandableListAdapter {
 		/*
 		 * set original list string
 		 */
-		for(int i=0;i<3;i++){
-			groupName.add("Floor: "+i);
+		for (Iterator<Floor> i = XMLParser.listfloor.iterator(); i.hasNext(); ){
+			Floor flr = i.next();
+			groupName.add("Floor: "+flr.floorid);
 			Vector<String> vet = new Vector<String>();
-			for(int j=0;j<4;j++){
-				vet.add("Room: "+j);
+			for (Iterator<Room> j = flr.listroom.iterator(); j.hasNext(); ){
+				Room rm = j.next();
+				vet.add(rm.name);
 			}
 			itemName.add(vet);
 		}

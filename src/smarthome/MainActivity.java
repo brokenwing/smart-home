@@ -2,6 +2,7 @@ package smarthome;
 
 import com.example.smarthome.R;
 
+import Parser.XMLParser;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
@@ -16,6 +18,12 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
+		try {
+			XMLParser.initiate(this.getResources().openRawResource(R.raw.equipmentz));
+		} catch (Exception e) {
+			Toast.makeText(this, "XML reading fail: "+e.toString(), Toast.LENGTH_LONG).show();
+			e.printStackTrace();
+		}
 	}
 	
 	@Override

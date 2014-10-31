@@ -70,12 +70,16 @@ public class DeviceActivity extends Activity{
 				Intent intent = new Intent();  
 	            intent.setClass(DeviceActivity.this, RoomActivity.class);  
 	            Bundle bundle = new Bundle();
-	            bundle.putString(StaticValue.data, (String)adapter.getChild(groupPosition, childPosition));
+	            bundle.putString(StaticValue.title, (String)adapter.getGroup(groupPosition));
+	            bundle.putInt(StaticValue.groupid, groupPosition);
+	            bundle.putInt(StaticValue.childid, childPosition);
 	            intent.putExtras(bundle);  
 	            startActivityForResult(intent, WAIT_RESULT);  
 				return true;
 			}
 		});
+		//open the floor if there's only one
+		if (floor.getCount() == 1) floor.expandGroup(0);
 		/*
 		 * add element
 		 */

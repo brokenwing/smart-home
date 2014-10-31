@@ -1,7 +1,11 @@
 package smarthome;
 
+import java.util.Iterator;
+
 import com.example.smarthome.R;
 
+import Parser.Sceen;
+import Parser.XMLParser;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
@@ -72,9 +76,10 @@ public class SceneActivity extends Activity{
 		box.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT,LayoutParams.WRAP_CONTENT));
 		ret.addView(box);
 		/*
-		 * add item
+		 * addSceen
 		 */
-		for (int i=0; i<15; i++){
+		for (Iterator<Sceen> i = XMLParser.listpublicsceen.iterator(); i.hasNext(); ){
+			Sceen v = i.next();
 			//layout
 			LinearLayout tmp = new LinearLayout(context);
 			tmp.setOrientation(LinearLayout.HORIZONTAL);
@@ -85,8 +90,8 @@ public class SceneActivity extends Activity{
 			bt1.setLayoutParams(new LayoutParams(DisplayUtil.dp2px(50),DisplayUtil.dp2px(50)));
 			//text
 			TextView str = new TextView(context);
-			str.setText("scene: "+i);
-			str.setTextSize(DisplayUtil.sp2px(15));
+			str.setText(v.name);
+			str.setTextSize(DisplayUtil.sp2px(10));
 			str.setLayoutParams(new LinearLayout.LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT, 1.0f));
 			str.setGravity(Gravity.CENTER_HORIZONTAL);
 			//button on the right

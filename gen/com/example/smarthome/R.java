@@ -26,7 +26,6 @@ public final class R {
         public static final int releax=0x7f02000c;
         public static final int scene=0x7f02000d;
         public static final int setting=0x7f02000e;
-        public static final int smart_scene=0x7f02000f;
     }
     public static final class id {
         public static final int ContentLayout=0x7f070005;

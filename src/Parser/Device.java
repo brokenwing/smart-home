@@ -1,6 +1,6 @@
 package Parser;
 
-public class Device{
+public class Device{ 
 	public String devid;
 	public String board;
 	public String port;
